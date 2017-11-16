@@ -31,7 +31,7 @@ function sendForm(event) {
 	    dataType: "json"
 	})
 	.done(function(){
-		$('form').html('<h2>Thank you!</h2>');
+		$('.form-inp').html('<h2>Thank you!</h2>');
 	});
 }
 /*
