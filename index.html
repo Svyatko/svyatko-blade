@@ -6,18 +6,19 @@
 		<link rel="stylesheet" href="index.css">
 		<link href="https://fonts.googleapis.com/css?family=Almendra+Display|Bilbo+Swash+Caps" rel="stylesheet">
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/animate.css">
 		<title>Sviatko</title>
 	</head>
 	<body>		
 		<header>
-			<p>Sviatko Blade</p>
+			<p class="logo">Sviatko Blade</p>
 			<img class="img-mobile" src="images/burger-menu.png">
 			<nav>
 				<ul>				
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Service</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#service">Service</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -27,7 +28,7 @@
 				
 				<img src="images/main-picture.jpg" alt="main-picture">
 				
-				<div class="about-me">
+				<div id="about" class="about-me">
 					<h1>About me</h1>
 					<p>Hello. I'm Sviatko. I'm SoftServe IT University student. I wanna get a lot of practice of JavaScript. I wanna be full-stack Web Developer. I've already known HTML, CSS, PHP and Laravel framework. I'm study at Lviv Polytechnic University. That's my third year here.</p>
 				</div>
@@ -42,9 +43,9 @@
 
 			</div>
 
-			<div class="contact-me">
+			<div id="service" class="contact-me">
 				<div class="service">
-					<h2>Service</h2>
+					<h2>Service:</h2>
 					<ul>
 						<li>HTML</li>
 						<li>CSS</li>
@@ -52,7 +53,7 @@
 					</ul>
 				</div>
 				<div class="my-qoulities">
-					<h2>My qualities</h2>
+					<h2>My qualities:</h2>
 					<ul>
 						<li>Life of party</li>
 						<li>hard worcker</li>
@@ -60,8 +61,8 @@
 					</ul>
 				</div>
 				
-				<img src="images/info-icon.png" alt="info-icon">
-				<div class="form-inp">
+				<img class="pulse" src="images/info-icon.png" alt="info-icon">
+				<div id="contact" class="form-inp">
 					<h2>Contact me</h2>
 					<form>
 						<label>
@@ -73,12 +74,12 @@
 						<label>
 							<input id="msg" type="text" name="msg" placeholder="Type your message">
 						</label>
-						<label>							
+												
 							<button class="button" type="submit">
 								<img src="images/point.png" alt="point-button">
 								Send
 							</button>
-						</label>
+						
 					</form>
 				</div>
 			</div>
@@ -105,12 +106,11 @@
 			</div>
 		</main>
 
-		<footer>
-			<p>&copy; 2017 SviatkoBlade.com</p>
-		</footer>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
 		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 		  crossorigin="anonymous"></script>
+		<script src="js/form.js"></script>
 		<script src="js/index.js"></script>
+		<script src="js/scroll.js"></script>
 	</body>
 </html>

@@ -32,12 +32,13 @@ header img {
 	width: 40px;
 }
 
-header p {
+.logo {
 	font-size: 47px;
 	font-family: 'Bilbo Swash Caps', cursive;
 	font-weight: bold;
 	text-decoration: underline;
-	margin: 0;
+	margin: -250px 0 0 0 ;
+    position: relative;
 }
 
 header ul {
@@ -47,6 +48,7 @@ header ul {
 header li {
 	font-size: 20px;
 	font-family: 'Almendra Display', cursive;
+	padding: 17px;
 }
 
 .active {
@@ -154,16 +156,17 @@ input[type=text] {
 	display: flex;
 }
 
-.button:hover {
-	background-color: #e5e5e5;}
+button:hover {
+	background-color: #e5e5e5;
+}
 
-.contact-me label {
+.contact-me label, button {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-.contact-me label img {
+.contact-me button img {
 	width: 46px;
 }
 
@@ -173,7 +176,6 @@ button {
 	font-family: 'Amita', cursive;
 	font-size: 31px;
 	color: #5c5b5b;
-	text-align: right;
 }
 
 .also-contact img {
@@ -198,10 +200,7 @@ button {
 	font-weight: bold;
 	text-decoration: underline;
 	text-align: center;
-}
-
-footer {
-	display: none;
+	margin-bottom: 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -219,8 +218,8 @@ footer {
 		padding: 0;
 	}
 
-	header p {
-		font-size: 45px;
+	.logo {
+		font-size: 37px;
 	}
 
 	.contact-me {
@@ -233,7 +232,7 @@ footer {
 		display: block;
 		align-self: center;
 	}
-
+	
 	.also-contact {
 		background-image: url('images/jocker-contact.jpg');
 		background-size: cover;
@@ -255,7 +254,7 @@ footer {
 }
 
 @media (min-width: 690px) {
-	header p {
+	.logo {
 		font-size: 55px;
 	}
 
