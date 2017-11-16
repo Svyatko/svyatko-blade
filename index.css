@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Almendra+Display|Amita|Bilbo+Swash+Caps');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+
+body {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0;
+}
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #5c5b5b;
+	padding: 17px;
+}
+
+header {
+	margin: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+header nav {
+	display: none;
+}
+
+header img {
+	margin-top: 17px;
+	width: 40px;
+}
+
+header p {
+	font-size: 47px;
+	font-family: 'Bilbo Swash Caps', cursive;
+	font-weight: bold;
+	text-decoration: underline;
+	margin: 0;
+}
+
+header ul {
+	margin: 0;
+}
+
+header li {
+	font-size: 20px;
+	font-family: 'Almendra Display', cursive;
+}
+
+.active {
+	background-color: #e5e5e5;
+}
+
+header li:hover {
+	background: #E5E5E5;
+}
+
+.container {
+	margin: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	color: #5c5b5b;
+}
+
+.container img {
+	width: 100%;
+	border-radius: 100%;
+}
+
+.container p {
+	text-align: justify;
+	font-family: 'Amita', cursive;
+	font-size: 27px;
+	line-height: 120%;
+}
+
+.container h1 {
+	font-family: 'Almendra Display', cursive;
+	font-size: 49px;
+	text-decoration: underline;
+}
+
+.qoute {
+	margin-top: 50px;
+	background-image: url('images/qoute.jpeg');
+	background-size: cover;
+	background-position-x: 200px;
+	background-size: cover;
+	padding-bottom: 100px;
+}
+
+.container-of-qoute {
+	margin: 0 10px;
+	color: white;
+	font-family: 'Almendra Display', cursive;
+}
+
+.container-of-qoute h2 {
+	font-size: 37px;
+	text-decoration: underline;
+}
+
+.container-of-qoute p {
+	font-size: 32px;
+}
+
+.container-of-qoute p:last-child {
+	font-size: 37px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.contact-me {	
+	margin: 0 10px;
+	line-height: 200%;
+	color: #5c5b5b;
+}
+
+.service, .my-qoulities {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-me h2 {
+	font-size: 37px;
+	font-family: 'Almendra Display', cursive;
+	text-decoration: underline;	
+}
+
+.contact-me li {
+	font-size: 32px;
+	font-family: 'Amita', cursive;
+}
+
+.contact-me > img {
+	display: none;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+    opacity: 0.52;
+}
+
+.button {
+	display: flex;
+}
+
+.button:hover {
+	background-color: #e5e5e5;}
+
+.contact-me label {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.contact-me label img {
+	width: 46px;
+}
+
+button {
+	border: none;
+	background-color: white;
+	font-family: 'Amita', cursive;
+	font-size: 31px;
+	color: #5c5b5b;
+	text-align: right;
+}
+
+.also-contact img {
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+}
+
+.also-contact label {
+	display: flex;
+	align-items: center;
+}
+
+.also-contact p {
+	font-size: 21px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.also-contact > p:last-child {
+	font-size: 37px;
+	font-family: 'Bilbo Swash Caps', cursive;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}
+
+footer {
+	display: none;
+}
+
+@media screen and (min-width: 600px) {
+	header img {
+		display: none;
+	}
+	header nav {
+		display: block;
+		max-width: 70%;
+
+	}
+	header ul {
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+
+	header p {
+		font-size: 45px;
+	}
+
+	.contact-me {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.contact-me img {
+		display: block;
+		align-self: center;
+	}
+
+	.also-contact {
+		background-image: url('images/jocker-contact.jpg');
+		background-size: cover;
+		background-position-x: right; 
+		padding-left: 10px;
+		color: white;
+	}
+
+	.also-contact h2{
+		padding-top: 10px;
+		font-family: 'Amita', cursive;
+		font-size: 31px;
+	}
+
+	.also-contact > p:last-child {
+		font-size: 49px;
+		text-align: left;
+	}
+}
+
+@media (min-width: 690px) {
+	header p {
+		font-size: 55px;
+	}
+
+	.container {
+		flex-direction: row;
+	}
+
+	.container img {
+		max-width: 531px;
+		width: 40%;
+		border-radius: 100%;
+	}
+
+	.about-me {
+		max-width: 45%;
+		text-align: justify;
+		font-family: 'Amita', cursive;
+		color: #5c5b5b;
+	}
+
+	.about-me h1 {
+		font-size: 49px;
+		font-family: 'Almendra Display', cursive;
+		text-decoration: underline;
+	}
+
+	.container img {
+		height: 40%;
+		align-self: center;
+	}
+}

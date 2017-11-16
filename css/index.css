@@ -1,0 +1,389 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Almendra+Display|Amita|Bilbo+Swash+Caps');
+
+body {
+	max-width: 981px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+ul {
+	list-style-type: none;
+
+}
+.img-mobile {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+header {
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: -35px;
+}
+
+header nav {
+	max-width: 523px;
+	width: 55%;
+	margin-top: -16px;
+}
+
+header nav ul{
+	display: flex;
+	justify-content: space-around;
+}	
+
+header p {
+	font-family: 'Bilbo Swash Caps', cursive;
+	font-size: 55px;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-top: 0;
+}
+
+header li {	
+	padding: 20px;
+	font-size: 20px;
+	font-family: 'Almendra Display', cursive;
+	min-width: 16%;
+}
+
+.active {
+	background: #E5E5E5;
+}
+
+header li:hover {
+	background: #E5E5E5;
+}
+
+
+
+
+
+.about-me p {
+	line-height: 100%;
+	font-size: 27px;
+}
+
+div.qoute {
+	background-image: url('../images/qoute.jpeg');
+	background-repeat: no-repeat;
+	background-color: black;
+	height: 450px;
+}
+
+.qoute * {
+	color: white;
+}
+.qoute h2 {
+	font-family: 'Almendra Display', cursive;
+	font-size: 49px;
+	text-decoration: underline;
+}
+
+.qoute p {
+	font-family: 'Alex Brush', cursive;
+	font-size: 47px;
+}
+.qoute p:last-child {
+	font-weight: bold;
+}
+
+.container-of-qoute {
+	line-height: 120%;
+	margin-left: 20px;
+}
+
+.contact-me {
+	margin: 10px;
+	grid-gap: 10px;
+	color: #5c5b5b;
+}
+
+.contact-me h2 {
+	font-family: 'Almendra Display', cursive;
+	font-size: 49px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.contact-me li {
+	font-family: 'Amita', cursive;
+	font-size: 37px;
+	line-height: 100%;
+	margin-left: 70px;
+}
+
+.contact-me img {
+	margin-top: 0px;
+}	
+
+.form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-inp {
+	flex-direction: column;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+    opacity: 0.52;
+}
+
+button {
+	border: none;
+	background-color: white;
+	font-family: 'Amita', cursive;
+	font-size: 31px;
+	color: #5c5b5b;
+	text-align: right;
+}
+
+form img {
+	max-width: 70px;
+	max-height: 70px;
+}
+
+form label {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.form-inp h2 {
+	margin-top: 0;
+}
+
+.also-contact {
+	background-image: url('../images/jocker-contact.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+.also-contact img {
+	max-width: 62px;
+	height: 58px;	
+	margin: 0 45px;
+}
+.also-contact label {
+	display: flex;
+}
+
+.also-contact p {
+	width: 50%;
+	font-family: 'Amita', cursive;
+}
+
+.also-contact h2 {
+	font-family: 'Amita', cursive;
+	font-size: 49px;
+	margin: 0 45px;
+}
+
+.also-contact > p:last-child {
+	font-size: 55px;
+	text-decoration: underline;
+	font-family: 'Bilbo Swash Caps', cursive;
+	text-align: center;
+}
+
+footer {
+	font-family: 'Amita', cursive;
+	text-decoration: underline;
+	text-align: center;
+	margin-top: -10px;
+}
+
+@media (min-width: 320px) {
+	.contact-me li {
+		margin-left: 30px;
+		font-size: 35px;
+	}
+
+	nav {
+		display: none;
+	}
+
+	header p {
+		font-size: 35px;
+	}
+	
+	.container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+	}
+	
+	.container img, .container div {
+		align-self: center;
+	}
+
+	.contact-me > img {
+		display: none;
+	}
+	
+	.img-mobile {
+		display: block;
+		max-width: 60px;
+		margin-top: -13px;
+	}
+
+	.qoute p {
+		font-size: 30px;
+	}
+
+	.qoute h2 {
+		font-size: 35px;
+	}
+
+	.qoute {
+		display: grid;
+		grid-template-rows: 1fr;
+	}
+
+	.contact-me div h2, .contact-me div li {
+		font-size: 30px;
+	}
+
+	.about-me p {
+		font-size: 27px;
+	}
+
+	.also-contact h2 {
+		font-size: 26px;
+	}
+
+	.also-contact img {
+	    max-width: 62px;
+	    height: 20px;
+	    margin: 0 10px;
+	}
+
+	.also-contact p {
+		margin: 0;
+		font-size: 14px;
+	}
+
+	.also-contact > p:last-child {
+		font-size: 25px;
+		width: 150px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 601px) {
+	.qoute {
+		display: grid; 
+	    grid-template-columns: 1fr 1fr; 
+	}
+	
+	.form-inp {
+
+	}
+
+	.contact-me {		
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 3fr;
+	}
+
+	.service li, .my-qoulities {
+		font-size: 40px
+	}
+}
+
+@media (min-width: 690px) {
+	.contact-me div h2, .contact-me div li {
+		font-size: 37px;
+	}
+
+	.img-mobile {
+	    display: none;
+	}
+
+	nav {
+		display: block;
+	}
+
+	.about-me p {
+		font-size: 27px;
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		margin-bottom: 40px;
+	} 
+}
+
+/*@media (min-width: 675px) {
+
+	nav {
+		display: block;
+		padding: 5px;
+	}
+
+	nav ul {
+		margin-top: 5px;
+	}
+	nav li {
+		padding: 5px;
+	}
+	header p {
+		font-size: 30px;	
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about-me p {
+		font-size: 19px;
+	}
+}*/
+=======
+div {
+	text-align: center;
+	background-color: red;
+}
+
+body {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 2fr 2fr 2fr;
+	grid-gap: 5px;
+}
+
+#container {
+	width: 350px;
+	height: 350px;
+	background-color: yellow; 
+	border: 2px solid black;
+}
+
+#element {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+}
+>>>>>>> 431e7fb685ef66f43a38edd44a14e534fdc6c488
