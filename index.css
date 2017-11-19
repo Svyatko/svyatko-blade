@@ -197,8 +197,16 @@ button {
 .also-contact a {
 	font-size: 21px;
 	font-family: 'Alegreya Sans SC', sans-serif;
-	color: white;
+	color: black;
 	text-decoration: underline;
+	padding: 10px 0;
+}
+
+.also-contact h2 {
+	padding-top: 10px;
+	font-family: 'Amita', cursive;
+	font-size: 31px;
+	margin: 10px;
 }
 
 .also-contact > p:last-child {
@@ -210,15 +218,16 @@ button {
 	margin-bottom: 0;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
 	header img {
 		display: none;
 	}
+
 	header nav {
 		display: block;
 		max-width: 70%;
-
 	}
+
 	header ul {
 		display: flex;
 		justify-content: space-between;
@@ -247,11 +256,9 @@ button {
 		padding-left: 10px;
 		color: white;
 	}
-
-	.also-contact h2{
-		padding-top: 10px;
-		font-family: 'Amita', cursive;
-		font-size: 31px;
+	
+	.also-contact a {
+		color: white;
 	}
 
 	.also-contact > p:last-child {

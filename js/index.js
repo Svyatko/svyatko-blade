@@ -7,9 +7,6 @@ $(document).ready(function(){
 
 $(document).ready(function() {
 	setInterval(pulseFunc, 2000);
-	$('.carousel').slick({
-		dots: true
-	});
 });
 
 function pulseFunc() {
