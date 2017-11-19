@@ -194,6 +194,13 @@ button {
 	font-family: 'Alegreya Sans SC', sans-serif;
 }
 
+.also-contact a {
+	font-size: 21px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: white;
+	text-decoration: underline;
+}
+
 .also-contact > p:last-child {
 	font-size: 37px;
 	font-family: 'Bilbo Swash Caps', cursive;
@@ -285,4 +292,8 @@ button {
 		height: 40%;
 		align-self: center;
 	}
+}
+
+.gallery-mobile {
+	display: none;
 }
