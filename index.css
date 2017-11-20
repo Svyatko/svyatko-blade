@@ -21,6 +21,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	position: relative;
 }
 
 header nav {
@@ -32,6 +33,11 @@ header img {
 	width: 40px;
 }
 
+.menu {
+	display: none;
+	background-color: #aaa;
+}
+
 .logo {
 	font-size: 47px;
 	font-family: 'Bilbo Swash Caps', cursive;
@@ -39,6 +45,27 @@ header img {
 	text-decoration: underline;
 	margin: -250px 0 0 0 ;
     position: relative;
+}
+
+.menu ul {
+	padding: 0;
+}
+
+.menu li {
+	text-align: center;
+	margin: 0 20px;
+	color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.img-mobile {
+	position: absolute;
+	right: 0;
+}
+
+.burger-menu button {
+	align-self: flex-start;
 }
 
 header ul {
@@ -59,7 +86,7 @@ header li {
 	background-color: #e5e5e5;
 }
 
-header a:hover {
+header nav a:hover {
 	background: #E5E5E5;
 }
 

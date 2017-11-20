@@ -12,6 +12,22 @@ $(document).ready(function() {
         $(ev.target).addClass("active");
         //$('#'+ev.target.dataset.panel).addClass('active');
     });
+
+	$( ".cross" ).hide();
+	$( ".menu" ).hide();
+	$( ".img-mobile" ).click(function() {
+		$( ".menu" ).slideToggle( "slow", function() {
+			$( ".img-mobile" ).hide();
+			$( ".cross" ).show();
+		});
+	});
+
+	$( ".cross" ).click(function() {
+		$( ".menu" ).slideToggle( "slow", function() {
+			$( ".cross" ).hide();
+			$( ".img-mobile" ).show();
+		});
+	});
 });
 
 function pulseFunc() {
