@@ -7,6 +7,11 @@ $(document).ready(function(){
 
 $(document).ready(function() {
 	setInterval(pulseFunc, 2000);
+	 $("nav a").click(function(ev){
+        $("a").removeClass("active");
+        $(ev.target).addClass("active");
+        //$('#'+ev.target.dataset.panel).addClass('active');
+    });
 });
 
 function pulseFunc() {
@@ -14,10 +19,8 @@ function pulseFunc() {
 }
 
 $(document).ready(function(){
-    $(window).resize(function(){
-        let viewportWidth = $(window).width();
-	    if (viewportWidth < 600) {
-	        $("img").removeClass("pulse").addClass("gallery-mobile");
-		}
-    });
+    let viewportWidth = $(window).width();
+    if (viewportWidth < 600) {
+        $(".img img").removeClass("pulse").addClass("gallery-mobile");
+	}
 });

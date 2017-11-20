@@ -45,17 +45,21 @@ header ul {
 	margin: 0;
 }
 
+header a {
+	padding: 10px 20px;
+}
+
 header li {
 	font-size: 20px;
 	font-family: 'Almendra Display', cursive;
-	padding: 17px;
+	padding: 0px;
 }
 
 .active {
 	background-color: #e5e5e5;
 }
 
-header li:hover {
+header a:hover {
 	background: #E5E5E5;
 }
 
