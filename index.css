@@ -33,6 +33,10 @@ header img {
 	width: 40px;
 }
 
+.burger-menu {
+	display: flex;
+}
+
 .menu {
 	display: none;
 	background-color: #aaa;
