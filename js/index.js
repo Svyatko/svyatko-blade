@@ -1,26 +1,9 @@
-$(document).ready(function(){
-	$(".logo").animate({
-		top: '250px',
-        opacity: '0.5'
-	}, 1000);
-});
-
 $(document).ready(function() {
 	setInterval(pulseFunc, 2000);
 	 $("nav a").click(function(ev){
         $("a").removeClass("active");
         $(ev.target).addClass("active");
-        //$('#'+ev.target.dataset.panel).addClass('active');
     });
-
-	$( ".cross" ).hide();
-	$( ".menu" ).hide();
-	$( ".img-mobile" ).click(function() {
-		$( ".menu" ).slideToggle( "slow", function() {
-			$( ".img-mobile" ).hide();
-			$( ".cross" ).show();
-		});
-	});
 
 	$( ".cross" ).click(function() {
 		$( ".menu" ).slideToggle( "slow", function() {
@@ -28,6 +11,14 @@ $(document).ready(function() {
 			$( ".img-mobile" ).show();
 		});
 	});
+
+	$(".burger-icon").click(function() {
+		$(".menu").toggleClass("open");
+		$(".burger-icon span").toggleClass("cross");
+	})
+	$(".menu li").click(function() {
+		$(".menu").removeClass("open");
+	})
 });
 
 function pulseFunc() {
@@ -39,4 +30,9 @@ $(document).ready(function(){
     if (viewportWidth < 600) {
         $(".img img").removeClass("pulse").addClass("gallery-mobile");
 	}
+
+	$('.burger-icon').click(function(){
+		$(this).toggleClass('open');
+	});
 });
+

@@ -47,7 +47,7 @@ header p {
 
 header li {	
 	padding: 20px;
-	font-size: 20px;
+	font-size: 36px;
 	font-family: 'Almendra Display', cursive;
 	min-width: 16%;
 }
@@ -59,10 +59,6 @@ header li {
 header li:hover {
 	background: #E5E5E5;
 }
-
-
-
-
 
 .about-me p {
 	line-height: 100%;
