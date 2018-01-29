@@ -18,6 +18,8 @@ $(document).ready(function() {
 	})
 	$(".menu li").click(function() {
 		$(".menu").removeClass("open");
+		$(".burger-icon span").removeClass("cross");
+		$(".burger-icon").removeClass("open");
 	})
 });
 
