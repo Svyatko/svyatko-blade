@@ -147,9 +147,6 @@ header img {
 	transform: rotate(-135deg);
 }
 
-
-/*            */
-
 .burger-menu button {
 	align-self: flex-start;
 }
@@ -351,7 +348,9 @@ button {
 		justify-content: space-between;
 		padding: 0;
 	}
-
+	.burger-menu {
+		display: none;
+	}
 	.logo {
 		font-size: 37px;
 	}
